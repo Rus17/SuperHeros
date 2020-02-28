@@ -1,5 +1,5 @@
 import React from "react"
-import phone from "../../Img/SH.jpg"
+import phone from "../../img/SH.jpg"
 
 const Header = () => {
    return (

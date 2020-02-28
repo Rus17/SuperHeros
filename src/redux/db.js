@@ -1,6 +1,5 @@
-
-let startdb: {      
-   users: [
+let startdb = {
+   heroes: [
       {
          id: 0,
          nickname: 'Superman',
@@ -9,7 +8,7 @@ let startdb: {
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
          catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
          Images: ['./img/PA.jpg']
-        
+
       },
       {
          id: 1,
@@ -36,8 +35,7 @@ let startdb: {
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
          catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-         Images: [
-         avatar: './img/Ch.jpg'],
+         Images: ['./img/Ch.jpg'],
       },
       {
          id: 4,
@@ -121,5 +119,10 @@ let startdb: {
          catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
          Images: ['./img/MY.jpg']
       }
-   ]   
+   ],
+   getHeroes(){ return this.heroes },
+   newHero(obj){ this.heroes = [...this.heroes, obj] },
+   delHero(id){ return "delete объект.свойство;" }
 }
+
+export default startdb
