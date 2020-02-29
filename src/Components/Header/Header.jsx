@@ -1,9 +1,12 @@
 import React from "react"
 import phone from "../../img/SH.jpg"
+import "../../App.css"
 
 const Header = () => {
    return (
-      <img src={phone} alt="phone"/>
+      <div className="item">
+         <img src={phone} alt="phone"/>
+      </div>
    )
 }
 

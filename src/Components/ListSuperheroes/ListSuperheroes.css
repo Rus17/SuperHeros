@@ -1,0 +1,9 @@
+.innerContainer{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color:floralwhite;
+/*   width: 80%;*/
+   margin-bottom: 20px;
+   padding: 20px 0;
+}
