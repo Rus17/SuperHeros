@@ -7,3 +7,8 @@
    margin-bottom: 20px;
    padding: 20px 0;
 }
+
+.currentPage{
+   font-size: 120%;
+   font-weight: bold
+}

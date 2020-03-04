@@ -1,22 +1,49 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import {Provider, connect} from "react-redux"
+import {BrowserRouter, Route} from "react-router-dom"
+
+import {getListSuperheroesTC} from "./redux/listSuperheroesReducer"
+
+import './App.css'
 import Header from "./Components/Header/Header"
 import ListSuperheroes from "./Components/ListSuperheroes/ListSuperheroesContainer"
 import OneSuperhero from "./Components/OneSuperhero/OneSuperheroContainer"
-//import db from './redux/db'
-import {BrowserRouter, Route} from "react-router-dom"
+
+import store from "./redux/store.js"
 
 
-function App() {
-  return (
-     <BrowserRouter>
+class App extends React.Component {
+   componentDidMount(props){
+      this.props.getListSuperheroesTC()
+   }
+   
+   render(){
+      return (
         <div className="container">
            <Header />
            <Route exact path='/' component={ListSuperheroes} />
            <Route path='/superhero/:id' component={OneSuperhero} />           
         </div>
-      </BrowserRouter>
-  );
+      )
+   }   
 }
 
-export default App;
+let MapDispatchToProps = (dispatch) => {
+   return {
+      getListSuperheroesTC: () => dispatch(getListSuperheroesTC())
+   }
+}
+
+const AppConnect = connect(null, MapDispatchToProps)(App)
+
+const AppContainer = () => {
+   return (
+      <BrowserRouter>
+         <Provider store={store}>
+            <AppConnect />
+         </Provider>
+      </BrowserRouter>
+   )
+}
+
+export default AppContainer

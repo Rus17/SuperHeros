@@ -3,14 +3,31 @@ import {NavLink} from "react-router-dom"
 import "./ListSuperheroes.css"
 
 const ListSuperheroes = (props) => {
-   const showHeroes = props.list().map((h) => {
+   
+   let numberPages = Math.ceil(props.number / 5)
+   
+   let pages =[]      
+   for(let i = 0; i < numberPages; i++){pages.push(i)}
+   
+   let showPages = pages.map((p) =>{
+      
+      if(p + 1 === props.currentPage){
+         return <span key={p} onClick={(e) => {props.clickHandler(p + 1)}} className="currentPage">{p + 1}</span>
+      } else {
+         return <span key={p} onClick={(e) => {props.clickHandler(p + 1)}}>{p + 1}</span>
+      }
+   })
+   
+       
+   let showHeroes = props.list.map((h) => {
       return (         
          <div className="innerContainer" key={h.id}>
             <NavLink to={`/superhero/${h.id}`}>
                <img src={h.Images[0]} alt="avatar" />
                <p>{h.nickname}</p>
             </NavLink>
-               <button>Dell this superhero</button>            
+               <button onClick={() => props.delSuperheroTC(h.id, props.currentPage)
+               }>Dell this superhero</button>            
          </div>         
       )
    })
@@ -18,7 +35,8 @@ const ListSuperheroes = (props) => {
    return (
       <div className="item">
          <button>Add superhero</button>
-        <h2>List all the superheroes</h2>   
+        <h2>List all the superheroes</h2> 
+         {showPages}
          {showHeroes}
       </div>
    )

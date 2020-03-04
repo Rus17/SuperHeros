@@ -2,17 +2,16 @@ let startdb = {
    heroes: [
       {
          id: 0,
-         nickname: 'Падме Амидала',
+         nickname: 'Aquaman',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
          catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-         Images: ['./img/PA.jpg']
-
-      },
+         Images: ['./img/PA.jpg', './img/OVC.jpg']
+      },   
       {
          id: 1,
-         nickname: 'Оби-Ван Кеноби',
+         nickname: 'Superman',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -21,7 +20,7 @@ let startdb = {
       },
       {
          id: 2,
-         nickname: 'Магистр Йода',
+         nickname: 'Spider-Man',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -30,7 +29,7 @@ let startdb = {
       },
       {
          id: 3,
-         nickname: 'Чубака',
+         nickname: 'Captain America',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -39,7 +38,7 @@ let startdb = {
       },
       {
          id: 4,
-         nickname: 'Люк Скайуокер',
+         nickname: 'Batman',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -48,7 +47,7 @@ let startdb = {
       },
       {
          id: 5,
-         nickname: 'Падме Амидала',
+         nickname: 'Incredible Hulk',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -57,7 +56,7 @@ let startdb = {
       },
       {
          id: 6,
-         nickname: 'Оби-Ван Кеноби',
+         nickname: 'Watchmen',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -66,7 +65,7 @@ let startdb = {
       },
       {
          id: 7,
-         nickname: 'Магистр Йода',
+         nickname: 'Thor',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -75,7 +74,7 @@ let startdb = {
       },
       {
          id: 8,
-         nickname: 'Чубака',
+         nickname: 'Чубака 2',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -84,7 +83,7 @@ let startdb = {
       },
       {
          id: 9,
-         nickname: 'Люк Скайуокер',
+         nickname: 'Люк Скайуокер 2',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -93,7 +92,7 @@ let startdb = {
       },
       {
          id: 10,
-         nickname: 'Падме Амидала',
+         nickname: 'Падме Амидала 3',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -102,7 +101,7 @@ let startdb = {
       },
       {
          id: 11,
-         nickname: 'Оби-Ван Кеноби',
+         nickname: 'Оби-Ван Кеноби 3',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -111,8 +110,7 @@ let startdb = {
       },
       {
          id: 12,
-         name: 'Магистр Йода',
-         nickname: 'Магистр Йода',
+         nickname: 'Магистр Йода 3',
          real_name : 'Clark Kent',
          origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
          superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -120,9 +118,28 @@ let startdb = {
          Images: ['./img/MY.jpg']
       }
    ],
-   getHeroes(){ return this.heroes },
-   newHero(obj){ this.heroes = [...this.heroes, obj] },
-   delHero(id){ return "delete объект.свойство;" }
+   numberHeroes(){ return this.heroes.length },
+   getHeroes(n){
+      let arrSupeheroes = []
+      let current = n * 5 - 5
+      for(let i = current; i < current + 5; i++){
+         if(this.heroes[i]){
+            arrSupeheroes.push(this.heroes[i])
+         }
+      }
+      return arrSupeheroes
+   },
+   getOneHeroes(id){ return this.heroes[id] },
+   
+   addHero(obj){ this.heroes = [...this.heroes, obj] }
+}
+
+export let delHero = (idHero) => {
+   for(let i = 0; i < startdb.heroes.length; i++){
+      if(idHero === startdb.heroes[i].id){
+         startdb.heroes.splice(i, 1)
+      }   
+   }
 }
 
 export default startdb
