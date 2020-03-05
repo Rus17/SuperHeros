@@ -2,7 +2,7 @@ import React from "react"
 import {connect} from "react-redux"
 import {withRouter} from 'react-router-dom'
 import OneSuperhero from "./OneSuperhero"
-import {getOneSuperheroTC, delImageAC} from '../../redux/oneSuperheroReducer'
+import {getOneSuperheroTC} from '../../redux/oneSuperheroReducer'
 
 class OneSuperheroContainer extends React.Component {   
    
@@ -11,9 +11,10 @@ class OneSuperheroContainer extends React.Component {
    }
    
    render(props){
+      if(this.props.oneSuperhero.id !== undefined){
       return <OneSuperhero  
-                  oneSuperhero={this.props.oneSuperhero} 
-                  delImageAC={(indImage) => this.props.delImageAC(indImage)}/>
+                  oneSuperhero={this.props.oneSuperhero}/>
+      } else { return <>...</>}
    }
 }
 
@@ -28,8 +29,7 @@ let MapStateToProps = (state) => {
 
 let MapDispatchToProps = (dispatch) => {
    return {
-      getOneSuperheroTC: (id) => dispatch(getOneSuperheroTC(id)),
-      delImageAC: (indImage) => dispatch(delImageAC(indImage))
+      getOneSuperheroTC: (id) => dispatch(getOneSuperheroTC(id))
    }
 }
 
