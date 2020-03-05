@@ -6,7 +6,8 @@ import {reducer as formReducer} from 'redux-form'
 
 let reducers = combineReducers({
    listSuperheroes: listSuperheroesReducer,
-   oneSuperhero: oneSuperheroReducer
+   oneSuperhero: oneSuperheroReducer,
+   form: formReducer
 })
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware))

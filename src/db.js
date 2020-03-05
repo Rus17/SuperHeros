@@ -129,7 +129,13 @@ let startdb = {
       }
       return arrSupeheroes
    },
-   getOneHeroes(id){ return this.heroes[id] },
+   getOneHero(currentID){ 
+      for(let i = 0; i < this.heroes.length; i++){
+         if(this.heroes[i].id == currentID){
+            return this.heroes[i] 
+         }
+      }      
+   },
    
    addHero(obj){ this.heroes = [...this.heroes, obj] }
 }

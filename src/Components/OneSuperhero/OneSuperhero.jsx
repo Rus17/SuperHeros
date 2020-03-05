@@ -1,4 +1,4 @@
-import React, {useState}  from "react"
+import React, {useState, useEffect}  from "react"
 
 const OneSuperhero = (props) => {
    
@@ -24,6 +24,10 @@ const OneSuperhero = (props) => {
       newArrImages.push(`./${newImage}`)
       setImages(newArrImages)
    }
+   
+   useEffect(() => {
+      setImages([...props.oneSuperhero.Images])}, [props]	
+   )
       
    let showImages = arrImages.map((i) => {
       return (
@@ -62,7 +66,7 @@ const OneSuperhero = (props) => {
       </div>
    }   
     
-   return (
+   return (      
       <div className="item">
          {data}
       </div>

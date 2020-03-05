@@ -5,9 +5,9 @@ export const getListSuperheroesAPI = (n) => {
    return startdb.getHeroes(n)
 }
 
-export const getOneSuperheroARI = (id) => {
+export const getOneSuperheroARI = (currentID) => {
 //   console.log("api", startdb.getOneHeroes(id).Images[0])
-   return startdb.getOneHeroes(id)
+   return startdb.getOneHero(currentID)
 }
 
 export const getNumberSuperheroesAPI = () => {

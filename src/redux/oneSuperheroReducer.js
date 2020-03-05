@@ -9,10 +9,12 @@ let initialState = {
 let oneSuperheroReducer = (state = initialState, action) => {
    switch(action.type){
       case GET_ONE_SUPERHERO: {
-         return {
-         ...state,
-            oneSuperhero: action.data            
+         let newState = {
+            ...state,
+            oneSuperhero: action.data
          }
+         newState.oneSuperhero.Images = [...action.data.Images]
+         return newState
       }
        
       default: return state
