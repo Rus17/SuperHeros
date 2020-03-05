@@ -1,4 +1,5 @@
 import React, {useState, useEffect}  from "react"
+import Form from "../Form/Form"
 
 const OneSuperhero = (props) => {
    
@@ -28,6 +29,20 @@ const OneSuperhero = (props) => {
    useEffect(() => {
       setImages([...props.oneSuperhero.Images])}, [props]	
    )
+   
+   const onSubmit = (formData) => {
+         
+      let data = {
+         id: props.oneSuperhero.id,
+         nickname: formData.nickname,
+         real_name : formData.real_name,
+         origin_description: formData.origin_description,
+         superpowers: formData.superpowers,
+         catch_phrase: formData.catch_phrase,
+         Images: [...arrImages]
+      }
+      console.log(data)
+   }
       
    let showImages = arrImages.map((i) => {
       return (
@@ -40,10 +55,8 @@ const OneSuperhero = (props) => {
       )
    })
    
-   let data
-
    if(!editMode){
-      data = <div>            
+      return (<div className="item">            
          <h1>{props.oneSuperhero.nickname}</h1>
          {showImages}
          <p><b>Real name: </b>{props.oneSuperhero.real_name}</p>
@@ -51,26 +64,16 @@ const OneSuperhero = (props) => {
          <p><b>Superpowers: </b>{props.oneSuperhero.superpowers}</p>
          <p><b>Catch phrase: </b>{props.oneSuperhero.catch_phrase}</p>
          <button onClick={changeState}>Edit data</button>
-      </div>
+      </div>)
    } else {
-      data = <div>
-         {showImages}
-         <br />Add image <input type="file" onChange={(e) => addImage(e.target.files[0].name)} /><br />
-         <p><b>Nick name: </b><input defaultValue={props.oneSuperhero.nickname} /></p>
-         <p><b>Real name: </b><input defaultValue={props.oneSuperhero.real_name} /></p>
-         <p><b>Origin description: </b><textarea cols="50" rows="4" defaultValue={props.oneSuperhero.origin_description} /></p>
-         <p><b>Superpowers: </b><textarea cols="50" rows="4" defaultValue={props.oneSuperhero.superpowers} /></p>
-         <p><b>Catch phrase: </b><textarea cols="50" rows="4" defaultValue={props.oneSuperhero.catch_phrase} /></p>
-
-         <button onClick={changeState}>Save changes</button>
-      </div>
+      return <Form 
+               showImages={showImages} 
+               changeState={changeState} 
+               oneSuperhero={props.oneSuperhero}
+               addImage={addImage}
+               onSubmit={onSubmit}
+               />
    }   
-    
-   return (      
-      <div className="item">
-         {data}
-      </div>
-   )   
 }
 
 export default OneSuperhero
