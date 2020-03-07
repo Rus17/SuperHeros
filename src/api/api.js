@@ -1,5 +1,5 @@
 import startdb from "../db"
-import {delHero} from "../db"
+// import {delHero} from "../db"
 
 export const getListSuperheroesAPI = (n) => {
    return startdb.getHeroes(n)
@@ -15,5 +15,13 @@ export const getNumberSuperheroesAPI = () => {
 }
 
 export const delHeroAPI = (idHero) => {
-   return delHero(idHero)
+    startdb.delHero(idHero)
+}
+
+export const updateHeroAPI = (data) => {
+  startdb.updateHero(data)
+}
+
+export const addHeroAPI = (data) => {
+  startdb.addHero(data)
 }
