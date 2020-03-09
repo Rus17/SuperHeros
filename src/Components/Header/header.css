@@ -1,0 +1,12 @@
+.logo{
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+
+.header{
+   position: relative;
+   width: 1024px;
+   margin: 0 auto
+}

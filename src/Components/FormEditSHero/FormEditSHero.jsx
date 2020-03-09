@@ -5,8 +5,7 @@ const FormEditSHero = (props) => {
 
    return (<div className="item">
          <form onSubmit={props.handleSubmit}>
-
-            {props.showImages}
+            {props.arrImages[0] && props.showImages}
             <br />Add image <input type="file" onChange={(e) => props.addImage(e.target.files[0].name)} /><br />
 
 
@@ -50,6 +49,8 @@ const FormEditSHero = (props) => {
                   rows="4"
                   cols="50"
                   />
+                  
+                  <br />
 
             <button>Save changes</button>
          </form>

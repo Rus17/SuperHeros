@@ -15,7 +15,6 @@ let initialState = {
 
    numberSuperheroes: 0,
    pageSize: 5,
-//   totalUsersCount: 0,
    currentPage: 1
 }
 
@@ -92,16 +91,6 @@ export const getListSuperheroesTC = (currentPage = 1) => {
       dispatch(getListSuperheroesAC(listSH))    // Пишем порцию героев в СТОР
    }
 }
-
-// ----------------------- Del Superhero -----------------------
-
-// export const delSuperheroTC = (idHero, currentPage) => {
-//    return (dispatch) => {
-//
-//       dispatch(getNumberSuperheroesAC(delHeroAPI(idHero)))      // Запрашиваем удаление героя на сервере
-//       dispatch(getListSuperheroesTC(currentPage))     // Запрашиваем новую порцию супергероев на сервере
-//    }
-// }
 
 export const delSuperheroTC = (idHero, currentPage) => {
    return (dispatch) => {

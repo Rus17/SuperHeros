@@ -1,9 +1,13 @@
-import React from "react"
+import React, {useEffect} from 'react'
 import {connect} from "react-redux"
 import ListSuperheroes from "./ListSuperheroes"
 import {getListSuperheroesTC, delSuperheroTC} from "../../redux/listSuperheroesReducer"
 
 const ListSuperheroesContainer = (props) => {
+   
+   useEffect(() => {
+         props.getListSuperheroesTC(props.listSuperheroes.currentPage)
+      }, [props.listSuperheroes.numberSuperheroes])
    
    let clickHandler = (p) => {
       props.getListSuperheroesTC(p)

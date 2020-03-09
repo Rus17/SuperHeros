@@ -15,6 +15,7 @@ const OneSuperhero = (props) => {
        superpowers: props.oneSuperhero.superpowers,
        catch_phrase: props.oneSuperhero.catch_phrase
      })
+      
       setEditMode(!editMode)
    }
 
@@ -57,7 +58,7 @@ const OneSuperhero = (props) => {
    let showImages = arrImages.map((i) => {
       return (
          <div key={i}>
-            <img  src={'../../' + i} alt="Only images from the database are displayed"/>
+            <img  src={'../../' + i} alt={i}/>
             {editMode && <button onClick={() => {
                      delImage(i)
                   }}>Delete this image</button>}
@@ -68,7 +69,7 @@ const OneSuperhero = (props) => {
    if(!editMode){
       return (<div className="item">
          <h1>{props.oneSuperhero.nickname}</h1>
-         {showImages}
+         {arrImages[0] && showImages}
          <p><b>Real name: </b>{props.oneSuperhero.real_name}</p>
          <p><b>Origin description: </b>{props.oneSuperhero.origin_description}</p>
          <p><b>Superpowers: </b>{props.oneSuperhero.superpowers}</p>
@@ -78,6 +79,7 @@ const OneSuperhero = (props) => {
    } else {
       return <FormEditSHero
                showImages={showImages}
+               arrImages={arrImages}
                changeState={changeState}
                oneSuperhero={props.oneSuperhero}
                addImage={addImage}

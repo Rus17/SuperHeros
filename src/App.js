@@ -20,12 +20,14 @@ class App extends React.Component {
 
    render(){
       return (
-        <div className="container">
-           <Header />
+         <div>
+         <Header />
+         <div className="container">           
            <Route exact path='/' component={ListSuperheroes} />
            <Route path='/superhero/:id' component={OneSuperhero} />
            <Route path='/addSuperhero' component={FormAddSuperhero} />
-        </div>
+         </div>
+         </div>
       )
    }
 }

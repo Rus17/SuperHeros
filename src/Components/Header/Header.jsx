@@ -1,11 +1,16 @@
 import React from "react"
-import phone from "../../img/SH.jpg"
+import {NavLink} from "react-router-dom"
 import "../../App.css"
+import "./header.css"
 
 const Header = () => {
    return (
-      <div className="item">
-         <img src={phone} alt="phone"/>
+      <div className="header">
+         <img src="../../img/header.jpg" alt="phone"/>
+         <NavLink to="/">
+            <img className="logo" src="../../img/logoSH.png" width="50px" alt=""/>   
+         </NavLink>
+         
       </div>
    )
 }

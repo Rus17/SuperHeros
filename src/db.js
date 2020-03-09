@@ -7,7 +7,7 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/PA.jpg', './img/OVC.jpg']
+      Images: ['./img/AM.jpg', './img/AM2.jpg']
     },
     {
       id: 1,
@@ -16,7 +16,7 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/OVC.jpg']
+      Images: ['./img/SM.jpg']
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/MY.jpg']
+      Images: ['./img/SpM.jpg']
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/Ch.jpg'],
+      Images: ['./img/CA.jpg'],
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/LSW.jpg']
+      Images: ['./img/BM.jpg']
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/PA.jpg']
+      Images: ['./img/Hulk.jpg']
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/OVC.jpg']
+      Images: ['./img/WM.jpg']
     },
     {
       id: 7,
@@ -70,11 +70,11 @@ let startdb = {
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
       catch_phrase: 'Look, up in the sky, its a bird, its a plane, its Superman!',
-      Images: ['./img/MY.jpg']
+      Images: ['./img/Thor.jpg']
     },
     {
       id: 8,
-      nickname: 'Чубака 2',
+      nickname: 'Chewbacca',
       real_name : 'Clark Kent',
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -83,7 +83,7 @@ let startdb = {
     },
     {
       id: 9,
-      nickname: 'Люк Скайуокер 2',
+      nickname: 'Luke Skywalker',
       real_name : 'Clark Kent',
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -92,7 +92,7 @@ let startdb = {
     },
     {
       id: 10,
-      nickname: 'Падме Амидала 3',
+      nickname: 'Padmé Amidala Naberrie',
       real_name : 'Clark Kent',
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -101,7 +101,7 @@ let startdb = {
     },
     {
       id: 11,
-      nickname: 'Оби-Ван Кеноби 3',
+      nickname: 'Obi-Wan Kenobi',
       real_name : 'Clark Kent',
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -110,7 +110,7 @@ let startdb = {
     },
     {
       id: 12,
-      nickname: 'Магистр Йода 3',
+      nickname: 'Yoda',
       real_name : 'Clark Kent',
       origin_description: 'he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Kryptons destruction...',
       superpowers: 'solar energy absorption and healing factor, solar flare and heat vision, solar invulnerability, flight...',
@@ -131,14 +131,14 @@ let startdb = {
   },
   getOneHero(currentID){
     for(let i = 0; i < this.heroes.length; i++){
-      if(this.heroes[i].id == currentID){
+      if(this.heroes[i].id === +currentID){
         return this.heroes[i]
       }
     }
   },
   updateHero(data){
     for(let i = 0; i < this.heroes.length; i++){
-      if(this.heroes[i].id == data.id){
+      if(this.heroes[i].id === +data.id){
         this.heroes[i] = {...data}
       }
     }
@@ -150,39 +150,30 @@ let startdb = {
       }
     }
   },
-  // addHero(data){
-  //   let nextID
-  //   let skip = false
-  //   let iter = true
-  //
-  //   for(let count = 0; iter; count++){
-  //     for(let i = 0; i < this.heroes.length; i++){
-  //       if(this.heroes[i].id == count){
-  //         skip = true
-  //       }
-  //       if(!skip) {
-  //         nextID = count
-  //         iter = false
-  //       }
-  //     }
-  //   }
-  //
-  //   let obj = {
-  //     id: nextID,
-  //     ...data
-  //   }
-  //
-  //   this.heroes.push(obj)
-  //   console.log(this.heroes)
-  // }
+  addHero(data){
+     let nextID
+     let skip = false
+     let iter = true
+     for(let count = 0; iter; count++){
+       for(let i = 0; i < this.heroes.length; i++){
+         if(this.heroes[i].id === count){
+           skip = true
+         }         
+       }
+        if(!skip) {
+           nextID = count
+           iter = false
+         }
+        skip = false        
+     }
+  
+     let obj = {
+       id: nextID,
+       ...data
+     }
+  
+     this.heroes.push(obj)
+   }
 }
-//0, 1, 2, 3
-// export let delHero = (idHero) => {
-//    for(let i = 0; i < startdb.heroes.length; i++){
-//       if(idHero === startdb.heroes[i].id){
-//          startdb.heroes.splice(i, 1)
-//       }
-//    }
-// }
 
 export default startdb
