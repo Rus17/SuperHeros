@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/SuperHeros/static/css/main.d2b6c2ea.chunk.css",
-    "main.js": "/SuperHeros/static/js/main.e37dc999.chunk.js",
-    "main.js.map": "/SuperHeros/static/js/main.e37dc999.chunk.js.map",
+    "main.js": "/SuperHeros/static/js/main.f77a73bb.chunk.js",
+    "main.js.map": "/SuperHeros/static/js/main.f77a73bb.chunk.js.map",
     "runtime-main.js": "/SuperHeros/static/js/runtime-main.497c934f.js",
     "runtime-main.js.map": "/SuperHeros/static/js/runtime-main.497c934f.js.map",
-    "static/js/2.03a4bd0f.chunk.js": "/SuperHeros/static/js/2.03a4bd0f.chunk.js",
-    "static/js/2.03a4bd0f.chunk.js.map": "/SuperHeros/static/js/2.03a4bd0f.chunk.js.map",
+    "static/js/2.6d59bc7a.chunk.js": "/SuperHeros/static/js/2.6d59bc7a.chunk.js",
+    "static/js/2.6d59bc7a.chunk.js.map": "/SuperHeros/static/js/2.6d59bc7a.chunk.js.map",
     "index.html": "/SuperHeros/index.html",
-    "precache-manifest.4c1baa421bac99d04964e5412998d3bf.js": "/SuperHeros/precache-manifest.4c1baa421bac99d04964e5412998d3bf.js",
+    "precache-manifest.08ef8fbdd8452c566b5383622cc8f94f.js": "/SuperHeros/precache-manifest.08ef8fbdd8452c566b5383622cc8f94f.js",
     "service-worker.js": "/SuperHeros/service-worker.js",
     "static/css/main.d2b6c2ea.chunk.css.map": "/SuperHeros/static/css/main.d2b6c2ea.chunk.css.map",
-    "static/js/2.03a4bd0f.chunk.js.LICENSE.txt": "/SuperHeros/static/js/2.03a4bd0f.chunk.js.LICENSE.txt"
+    "static/js/2.6d59bc7a.chunk.js.LICENSE.txt": "/SuperHeros/static/js/2.6d59bc7a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.497c934f.js",
-    "static/js/2.03a4bd0f.chunk.js",
+    "static/js/2.6d59bc7a.chunk.js",
     "static/css/main.d2b6c2ea.chunk.css",
-    "static/js/main.e37dc999.chunk.js"
+    "static/js/main.f77a73bb.chunk.js"
   ]
 }

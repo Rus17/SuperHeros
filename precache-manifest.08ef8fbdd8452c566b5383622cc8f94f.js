@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12807817b11128e7a2d028e63704965e",
+    "revision": "5700d41b8d5df10f3788fe53b2ddf1dd",
     "url": "/SuperHeros/index.html"
   },
   {
-    "revision": "afe1bcabe7a89c6621c8",
+    "revision": "14e497b4cf0f4f98e9ad",
     "url": "/SuperHeros/static/css/main.d2b6c2ea.chunk.css"
   },
   {
-    "revision": "bd777d8695fb347971b8",
-    "url": "/SuperHeros/static/js/2.03a4bd0f.chunk.js"
+    "revision": "589cc8d4787188953448",
+    "url": "/SuperHeros/static/js/2.6d59bc7a.chunk.js"
   },
   {
     "revision": "f231859d6585c4cd5f80c344783ed269",
-    "url": "/SuperHeros/static/js/2.03a4bd0f.chunk.js.LICENSE.txt"
+    "url": "/SuperHeros/static/js/2.6d59bc7a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "afe1bcabe7a89c6621c8",
-    "url": "/SuperHeros/static/js/main.e37dc999.chunk.js"
+    "revision": "14e497b4cf0f4f98e9ad",
+    "url": "/SuperHeros/static/js/main.f77a73bb.chunk.js"
   },
   {
     "revision": "8a311092ed74eff9bcc1",
